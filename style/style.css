@@ -1,0 +1,150 @@
+*{
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+        /*звездочка вместо текста*/
+    
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* end reset.css*/
+    
+    body {
+        height: 800px;
+        width: 100%;
+        max-width: 1300px;
+        margin:0 auto;
+    }
+    .main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .container.first__string {
+        height: 16%;
+    }
+    .first__string__block1 {
+        background-color: red;
+        width: 36%;
+        
+    }
+    .first__string__block2{
+        background-color:orange;
+        width: 63%
+    }
+    .container.second__string {
+        margin-top: 10px;
+        height: 57%;
+    }
+    .second__string_block1 {
+        background-color:rgb(17, 219, 27);
+        width: 100%;
+    }   
+    .container.third__string {
+        height: 20%;
+    }
+    .third__string__block1{
+        background-color:orange;
+        width: 32%;
+    }
+    .third__string_blockn2{
+        background-color: blue;
+        width: 32%;
+    }
+    .third__string__block3{
+        background-color:rgb(255, 0, 242);
+        width: 32%;
+    }
+
+    @media(max-width: 900px) {
+        .first__string__block1 {
+            background-color: orange;
+    } 
+        .first__string__block2{
+        background-color: rgb(247, 0, 255);
+    }
+        .second__string_block1 {
+        background-color:red;
+    }
+        .third__string__block1{
+        background-color:rgb(78, 35, 5);
+        width: 49%;
+    }
+        .third__string_blockn2{
+        background-color: blue;
+        width: 49%;
+        margin-left: 13px;
+    }
+        .third__string__block3{
+        width: 0%;
+        height: 0%;
+    }
+}
+@media(max-width: 500px) {
+    .first__string__block1 {
+        background-color: green;
+        height: 100%;
+        width: 100%; 
+    }
+    .first__string__block2{
+        width: 0%;
+        height: 0%;
+    }
+    .container.second__string {
+        margin-top: 20px;
+        height: 15%;
+    }
+    .second__string_block1 {
+        background-color:rgb(185, 17, 219);
+        height: 100%;
+        width: 100%;
+    }  
+    .container.third__string {
+        height: 70%;
+        width: 98.3%;
+    }
+    .third__string__block1{
+        background-color:rgb(255, 8, 0);
+        height:100%;
+        width: 100%;
+    }
+    .third__string_blockn2{
+        width: 0%;
+        height: 0%;
+    }
+    .third__string__block3{
+        width: 0%;
+        height: 0%;
+    }
+}
